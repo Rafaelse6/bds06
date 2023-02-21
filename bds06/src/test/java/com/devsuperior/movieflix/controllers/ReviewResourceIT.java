@@ -15,6 +15,7 @@ import org.springframework.test.web.servlet.ResultActions;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.devsuperior.movieflix.dto.ReviewDTO;
+//import com.devsuperior.movieflix.dto.ReviewDTO;
 import com.devsuperior.movieflix.tests.TokenUtil;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -51,7 +52,7 @@ public class ReviewResourceIT {
 
 		ReviewDTO reviewDTO = new ReviewDTO();
 		reviewDTO.setText("Gostei do filme!");
-		reviewDTO.setMovieId(1L);
+		//reviewDTO.setMovieId(1L);
 
 		String jsonBody = objectMapper.writeValueAsString(reviewDTO);
 		
@@ -71,7 +72,7 @@ public class ReviewResourceIT {
 		
 		ReviewDTO reviewDTO = new ReviewDTO();
 		reviewDTO.setText("Gostei do filme!");
-		reviewDTO.setMovieId(1L);
+		//reviewDTO.setMovieId(1L);
 
 		String jsonBody = objectMapper.writeValueAsString(reviewDTO);
 		
@@ -95,7 +96,7 @@ public class ReviewResourceIT {
 		
 		ReviewDTO reviewDTO = new ReviewDTO();
 		reviewDTO.setText(reviewText);
-		reviewDTO.setMovieId(movieId);
+		//reviewDTO.setMovieId(movieId);
 
 		String jsonBody = objectMapper.writeValueAsString(reviewDTO);
 		
@@ -125,7 +126,7 @@ public class ReviewResourceIT {
 		
 		ReviewDTO reviewDTO = new ReviewDTO();
 		reviewDTO.setText("        ");
-		reviewDTO.setMovieId(1L);
+		//reviewDTO.setMovieId(1L);
 
 		String jsonBody = objectMapper.writeValueAsString(reviewDTO);
 
